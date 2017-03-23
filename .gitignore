@@ -1,0 +1,39 @@
+# ignore cache folder
+/silverstripe-cache/
+
+# ignore all environment files
+silverstripe.log
+
+# ignore build tools
+/tools/phing-metadata
+
+# SS Composer
+/vendor/
+/framework/
+/cms/
+/themes/simple/
+/assets/
+/siteconfig/
+/reports/
+/assets
+
+# Plugins
+display_logic
+googlesitemaps
+sortablegridfield
+betterbuttons
+tagfield
+email-helpers
+
+# node
+node_modules
+
+# Misc
+.buildpath
+.project
+.settings
+.idea
+.DS_Store
+/sitemap.xml
+_ss_environment.php
+install.php
