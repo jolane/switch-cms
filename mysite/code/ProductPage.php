@@ -5,6 +5,7 @@ class ProductPage extends Page {
 
 	private static $db = array(
 		'Icon' => 'Text',
+		'ShortDescription' => 'Text',
 		'Description' => 'Text'
 	);
 
@@ -14,6 +15,7 @@ class ProductPage extends Page {
 
 		$fields->addFieldsToTab('Root.Main',
 			array(
+				TextareaField::create('ShortDescription'),
 				TextareaField::create('Description'),
 				TextareaField::create('Icon', 'SVG Icon Code')
 			)
