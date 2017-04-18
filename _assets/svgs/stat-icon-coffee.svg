@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="348" height="398.4" viewBox="0 0 348 398.4">
+  <defs>
+    <style>
+      .f58422d9-cee0-4768-b992-4af6519cfbdf {
+        fill: none;
+      }
+
+      .\34 fbf1082-aafc-4298-b20f-dcffebc6f892 {
+        clip-path: url(#0fdc98ca-12b3-4922-954f-a8c47b631c81);
+      }
+
+      .\31 1553f24-0434-4706-94e0-e39ad04bd148 {
+        fill: #2c3e50;
+      }
+    </style>
+    <clipPath id="0fdc98ca-12b3-4922-954f-a8c47b631c81" transform="translate(-80 -73.6)">
+      <rect class="f58422d9-cee0-4768-b992-4af6519cfbdf" width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <title>stat-icon-coffee</title>
+  <g id="7afb1696-6961-4361-a09f-c57205aa12de" data-name="Layer 2">
+    <g id="3e824d3c-94e8-495c-af99-23c9618ed6d9" data-name="Layer 1">
+      <g class="4fbf1082-aafc-4298-b20f-dcffebc6f892">
+        <path class="11553f24-0434-4706-94e0-e39ad04bd148" d="M332,414.4H164a40,40,0,0,1-40-40v-224a8,8,0,0,1,8-8H364a8,8,0,0,1,8,8v224A40,40,0,0,1,332,414.4Zm-192-256v216a24,24,0,0,0,24,24H332a24,24,0,0,0,24-24v-216Z" transform="translate(-80 -73.6)"/>
+      </g>
+      <g class="4fbf1082-aafc-4298-b20f-dcffebc6f892">
+        <path class="11553f24-0434-4706-94e0-e39ad04bd148" d="M404,326.4H364a8,8,0,0,1-8-8v-112a8,8,0,0,1,8-8h40a24,24,0,0,1,24,24v80A24,24,0,0,1,404,326.4Zm-32-16h32a8,8,0,0,0,8-8v-80a8,8,0,0,0-8-8H372Z" transform="translate(-80 -73.6)"/>
+      </g>
+      <g class="4fbf1082-aafc-4298-b20f-dcffebc6f892">
+        <path class="11553f24-0434-4706-94e0-e39ad04bd148" d="M400,448H88a8,8,0,0,1,0-16H400a8,8,0,0,1,0,16Z" transform="translate(-80 -73.6)"/>
+      </g>
+      <g class="4fbf1082-aafc-4298-b20f-dcffebc6f892">
+        <path class="11553f24-0434-4706-94e0-e39ad04bd148" d="M344,472H144a8,8,0,0,1,0-16H344a8,8,0,0,1,0,16Z" transform="translate(-80 -73.6)"/>
+      </g>
+      <g class="4fbf1082-aafc-4298-b20f-dcffebc6f892">
+        <path class="11553f24-0434-4706-94e0-e39ad04bd148" d="M175.2,132.8a8,8,0,0,1-5.66-13.66l43.2-43.2a8,8,0,0,1,11.31,11.31l-43.2,43.2A8,8,0,0,1,175.2,132.8Z" transform="translate(-80 -73.6)"/>
+      </g>
+      <g class="4fbf1082-aafc-4298-b20f-dcffebc6f892">
+        <path class="11553f24-0434-4706-94e0-e39ad04bd148" d="M239.2,132.8a8,8,0,0,1-5.66-13.66l43.2-43.2a8,8,0,0,1,11.31,11.31l-43.2,43.2A8,8,0,0,1,239.2,132.8Z" transform="translate(-80 -73.6)"/>
+      </g>
+      <g class="4fbf1082-aafc-4298-b20f-dcffebc6f892">
+        <path class="11553f24-0434-4706-94e0-e39ad04bd148" d="M303.2,132.8a8,8,0,0,1-5.66-13.66l43.2-43.2a8,8,0,0,1,11.31,11.31l-43.2,43.2A8,8,0,0,1,303.2,132.8Z" transform="translate(-80 -73.6)"/>
+      </g>
+    </g>
+  </g>
+</svg>

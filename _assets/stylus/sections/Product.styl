@@ -1,0 +1,28 @@
+.Product
+	width 100%
+	&-block
+		width 100%
+		background-image url(../images/left-fade.jpg)
+		background-position right center
+		background-repeat no-repeat
+		background-size auto 100%
+		box-sizing border-box
+		padding-left calc((100% - 1200px) / 2)
+		padding-right 50%
+		padding-top 5rem
+		padding-bottom 5rem
+		&:nth-child(2n + 2)
+			background-color off_white
+			background-position left center
+			background-image url(../images/right-fade.jpg)
+			padding-right calc((100% - 1200px) / 2)
+			padding-left 50%
+
+	&-title
+		font-size (30/16)em
+		color dark_gray
+
+	&-desc
+		color gray
+		font-weight Book
+		font-size (18/16)em

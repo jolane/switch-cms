@@ -1,0 +1,45 @@
+.Button
+	display inline-block
+	height 2.5em
+	font-size 0.75rem
+	background-color blue
+	color white
+	padding 0 1em
+	border-radius 1.25em
+	transition all 0.2s linear
+	width auto
+	text-decoration none
+
+	&-inner
+		height 100%
+		display flex
+		flex-direction row
+		justify-content center
+		align-items center
+		padding-top 0.1em
+
+		& > svg
+			display inline-block
+			height 0.75em
+			width 0.75em
+			position static
+			margin-left 0.4em
+
+	&:hover
+		text-decoration none
+		background-color dark_blue
+
+	&-text
+		white-space nowrap
+
+	&--dark
+		background-color dark_blue
+		&:hover
+			background-color white
+			color blue
+
+	&--large
+		font-size 1.2em
+
+	&--medium
+		font-size 1.05em

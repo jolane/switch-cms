@@ -1,0 +1,39 @@
+.CaseStudies
+	padding 2rem 0
+	&-container
+		@extend .Container
+
+	&-panels
+		display flex
+		width 100%
+		width calc(100% + 2rem)
+		margin-left -1rem
+		flex-direction column
+		flex-wrap wrap
+		height 900px
+
+	&-panel
+		width 33.333%
+		box-sizing border-box
+		height 50%
+		padding 1rem
+		position relative
+		&--long
+			height 100%
+		& > div
+			height 100%
+			width 100%
+			position relative
+			background-color green
+
+	&-label
+		background-color blue
+		color white
+		font-size 0.75em
+		padding 0.5em 0.75em
+		position absolute
+		top 1rem
+		left 1rem
+		margin 0
+		text-transform uppercase
+		letter-spacing -1px

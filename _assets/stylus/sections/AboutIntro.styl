@@ -1,0 +1,40 @@
+.AboutIntro
+	width 100%
+	display flex
+	flex-direction row
+	align-items center
+	padding 5rem 0
+	background-image url(../images/testimonials-pattern.jpg)
+	background-size auto 100%
+	background-position left center
+	background-repeat no-repeat
+	&-content
+		width 50%
+		padding-left calc(50% - 600px)
+		padding-right 120px
+		color dark_gray
+		font-size (18/16)em
+		h2
+			font-weight Light
+			color black
+			margin 0
+			font-size (60/16)em
+		h3
+			font-weight Bold
+			color blue
+			font-size (24/16)em
+	&-images
+		width 50%
+		display flex
+		flex-direction row
+		flex-wrap wrap
+	&-image
+		width calc(33.333% - 20px)
+		margin-right 20px
+		margin-bottom 20px
+		position relative
+		background-color pink
+		&:after
+			content ''
+			display block
+			padding-bottom 100%

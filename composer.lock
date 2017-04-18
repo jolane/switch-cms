@@ -4,9 +4,49 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c3c5fdd2bab1a9c0211bdf172da20ba0",
-    "content-hash": "469383f6d5bb69e957288be1959e8b6b",
+    "hash": "1915d377cea9ff9f5fa153ca9e4cacec",
+    "content-hash": "317edaea269ab0d2c462b01c90b4041c",
     "packages": [
+        {
+            "name": "bummzack/sortablefile",
+            "version": "1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bummzack/sortablefile.git",
+                "reference": "3b601d30ec0a2e3654ce7fb37ffa557159952b2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bummzack/sortablefile/zipball/3b601d30ec0a2e3654ce7fb37ffa557159952b2f",
+                "reference": "3b601d30ec0a2e3654ce7fb37ffa557159952b2f",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~3.1"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "bummzack"
+                }
+            ],
+            "description": "An extension for SilverStripe 3.1 that allows sorting of multiple attached images (extends UploadField).",
+            "keywords": [
+                "cms",
+                "silverstripe",
+                "sortable"
+            ],
+            "time": "2016-02-03 13:42:16"
+        },
         {
             "name": "composer/installers",
             "version": "v1.2.0",
@@ -113,6 +153,155 @@
                 "zikula"
             ],
             "time": "2016-08-13 20:53:52"
+        },
+        {
+            "name": "nobrainerweb/silverstripe-content-blocks",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NobrainerWeb/Silverstripe-Content-Blocks.git",
+                "reference": "4ff3e1d2ef8739fdfd5cdaadec21121ef103399d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NobrainerWeb/Silverstripe-Content-Blocks/zipball/4ff3e1d2ef8739fdfd5cdaadec21121ef103399d",
+                "reference": "4ff3e1d2ef8739fdfd5cdaadec21121ef103399d",
+                "shasum": ""
+            },
+            "require": {
+                "bummzack/sortablefile": "~1.2",
+                "silverstripe/cms": "3.*",
+                "silverstripe/framework": "3.*"
+            },
+            "suggest": {
+                "jonom/focuspoint": "Crop an image based on a focus point",
+                "silverstripe-australia/gridfieldextensions": "Sort content blocks",
+                "unisolutions/silverstripe-copybutton": "Adds the option to duplicate dataobjects and their relations"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "content-blocks"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas B. Nielsen - Nobrainer Web",
+                    "email": "nobrainerweb@gmail.com",
+                    "homepage": "http://www.nobrainer.dk"
+                }
+            ],
+            "description": "Split your page content into manageable blocks/sections of content, each with their own template",
+            "homepage": "https://github.com/NobrainerWeb/Silverstripe-Content-Blocks",
+            "keywords": [
+                "blocks",
+                "content",
+                "section",
+                "sections",
+                "silverstripe"
+            ],
+            "time": "2017-02-27 15:22:54"
+        },
+        {
+            "name": "sheadawson/silverstripe-blocks",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sheadawson/silverstripe-blocks.git",
+                "reference": "40617e4f965c806c0f178e13d11c91e66be7c0f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sheadawson/silverstripe-blocks/zipball/40617e4f965c806c0f178e13d11c91e66be7c0f7",
+                "reference": "40617e4f965c806c0f178e13d11c91e66be7c0f7",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "silverstripe-australia/gridfieldextensions": "~1.0",
+                "silverstripe/cms": "~3.1",
+                "silverstripe/framework": "~3.1",
+                "silverstripe/multivaluefield": "~2.0",
+                "unclecheese/betterbuttons": "~1.2"
+            },
+            "suggest": {
+                "micschk/silverstripe-gridfieldsitetreebuttons": "Edit pages directly from a Block's 'used on page' list",
+                "unisolutions/silverstripe-copybutton": "Duplicate Blocks in Block Admin"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "blocks"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Shea Dawson",
+                    "email": "shea@silverstripe.com.au"
+                }
+            ],
+            "description": "An alternative to the SilverStripe Widgets module.",
+            "homepage": "http://github.com/sheadawson/silverstripe-blocks",
+            "keywords": [
+                "blocks",
+                "silverstripe",
+                "widgets"
+            ],
+            "time": "2016-11-08 22:48:10"
+        },
+        {
+            "name": "silverstripe-australia/gridfieldextensions",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe-australia/silverstripe-gridfieldextensions.git",
+                "reference": "a4d15e4ca428b3a8c96e085a7caaeb25c1f737fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-gridfieldextensions/zipball/a4d15e4ca428b3a8c96e085a7caaeb25c1f737fe",
+                "reference": "a4d15e4ca428b3a8c96e085a7caaeb25c1f737fe",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~3.1"
+            },
+            "replace": {
+                "ajshort/silverstripe-gridfieldextensions": "self.version"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "gridfieldextensions",
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                },
+                "screenshots": [
+                    "docs/en/_images/editable-rows.png",
+                    "docs/en/_images/add-existing-search.png"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Nyeholt",
+                    "email": "marcus@silverstripe.com.au"
+                },
+                {
+                    "name": "Andrew Short",
+                    "email": "andrewjshort@gmail.com"
+                }
+            ],
+            "description": "A collection of useful grid field components",
+            "homepage": "http://github.com/silverstripe-australia/silverstripe-gridfieldextensions",
+            "keywords": [
+                "gridfield",
+                "silverstripe"
+            ],
+            "time": "2016-08-19 08:28:30"
         },
         {
             "name": "silverstripe-themes/simple",
@@ -259,6 +448,47 @@
             "time": "2017-02-20 17:01:16"
         },
         {
+            "name": "silverstripe/multivaluefield",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe-australia/silverstripe-multivaluefield.git",
+                "reference": "f2f0a38217074509b0d9ea8b0d0269f041c8f363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-multivaluefield/zipball/f2f0a38217074509b0d9ea8b0d0269f041c8f363",
+                "reference": "f2f0a38217074509b0d9ea8b0d0269f041c8f363",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~3.1"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Nyeholt",
+                    "email": "marcus@silverstripe.com.au"
+                }
+            ],
+            "description": "A DB field + form fields for storing multiple values in a single property (serialized).",
+            "keywords": [
+                "dbfield",
+                "formfield",
+                "silverstripe"
+            ],
+            "time": "2017-02-21 04:01:46"
+        },
+        {
             "name": "silverstripe/reports",
             "version": "3.5.3",
             "source": {
@@ -350,6 +580,82 @@
                 "siteconfig"
             ],
             "time": "2016-12-22 00:18:45"
+        },
+        {
+            "name": "unclecheese/betterbuttons",
+            "version": "1.3.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/unclecheese/silverstripe-gridfield-betterbuttons.git",
+                "reference": "71f9653f51420ca07a33024bd8fe4396ee532bdb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/71f9653f51420ca07a33024bd8fe4396ee532bdb",
+                "reference": "71f9653f51420ca07a33024bd8fe4396ee532bdb",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~3.1"
+            },
+            "type": "silverstripe-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GNU"
+            ],
+            "authors": [
+                {
+                    "name": "Uncle Cheese",
+                    "email": "unclecheese@leftandmain.com"
+                }
+            ],
+            "description": "Adds new form actions and buttons to GridField detail form for usability enhancements.",
+            "keywords": [
+                "buttons",
+                "gridfield",
+                "silverstripe"
+            ],
+            "time": "2017-01-20 08:51:05"
+        },
+        {
+            "name": "undefinedoffset/sortablegridfield",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/UndefinedOffset/SortableGridField.git",
+                "reference": "06517fc3af599c003fa977420900f084dfc0372c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/06517fc3af599c003fa977420900f084dfc0372c",
+                "reference": "06517fc3af599c003fa977420900f084dfc0372c",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "silverstripe/framework": ">=3.0.1"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "sortablegridfield"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ed Chipman",
+                    "homepage": "http://www.edchipman.ca",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Adds drag and drop functionality to SilverStripe 3.0's GridField",
+            "keywords": [
+                "gridfield",
+                "silverstripe"
+            ],
+            "time": "2017-04-13 13:22:49"
         }
     ],
     "packages-dev": [
@@ -776,6 +1082,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "nobrainerweb/silverstripe-content-blocks": 20,
+        "undefinedoffset/sortablegridfield": 20,
         "phpunit/phpunit": 0
     },
     "prefer-stable": true,

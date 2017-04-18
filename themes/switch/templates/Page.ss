@@ -27,41 +27,11 @@
 	</h1>
 	<nav class="Header-nav">
 		<ul class="Nav">
-			<li class="Nav-item ">
-				<a href="/about-us/" class="Nav-link">About Us</a>
+			<% loop $Menu(1) %>
+			<li class="Nav-item $LinkingMode">
+				<a href="$Link" class="Nav-link" title="$Title">$MenuTitle</a>
 			</li>
-
-
-
-			<li class="Nav-item ">
-				<a href="/why-switch/" class="Nav-link">Why Switch</a>
-			</li>
-
-
-
-			<li class="Nav-item ">
-				<a href="/products/" class="Nav-link">Products</a>
-			</li>
-
-
-
-			<li class="Nav-item ">
-				<a href="/case-studies/" class="Nav-link">Case Studies</a>
-			</li>
-
-
-
-			<li class="Nav-item ">
-				<a href="/contact-us/" class="Nav-link">Contact Us</a>
-			</li>
-
-
-
-			<li class="Nav-item ">
-				<a href="/styles/" class="Nav-link">Styles</a>
-			</li>
-
-
+			<% end_loop %>
 		</ul>
 	</nav>
 

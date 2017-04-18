@@ -1,0 +1,44 @@
+.ContactForm
+	@extend .Container
+
+	&-form
+		display flex
+		flex-direction row
+		flex-wrap wrap
+		margin-bottom 2.6rem
+
+	&-input
+		width 33.333%
+		width 'calc(33.333% - %s)' % ((1.3em * 2)/3)
+		margin-left 1.3em
+		margin-bottom 1.3em
+		&:first-child
+			margin-left 0
+
+		&--full
+			width 100%
+			margin-left 0
+
+	&-textarea
+		width 100%
+		display block
+		height 5.5em
+		padding 1em
+		border 0
+		background-color light_gray
+		font-family inherit
+
+	&-submit
+		text-align center
+		width 100%
+
+	&-button
+		background-color blue
+		color white
+		font-weight Book
+		font-size 0.8888888888888888em
+		padding 0.75em
+		padding-top 0.9em
+		border 0
+		line-height 1
+		display inline-block

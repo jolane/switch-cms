@@ -1,0 +1,33 @@
+.Header
+	position absolute
+	top 0
+	left 0
+	z-index 1001
+	width 100%
+	height headerHeight
+	display flex
+	flex-direction row
+	justify-content flex-end
+	align-items center
+	padding 0 2rem
+	margin 0
+	box-sizing border-box
+
+	body.hide-header &
+		position fixed
+		top -5rem
+		transition margin 0.2s ease-in
+		background-color rgba(0, 0, 0, 0.6)
+	body.show-header &
+		margin-top 5rem
+
+
+	&-logo
+		width 11rem
+		margin-right auto
+
+	&-nav
+		height 100%
+
+	&-cta
+		margin-left 2.5rem

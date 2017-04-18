@@ -1,0 +1,63 @@
+{
+  "name": "switch-cms",
+  "version": "1.0.0",
+  "description": "Base project folder for a SilverStripe ([http://silverstripe.org](http://silverstripe.org)) installation. Requires additional modules to function:",
+  "main": "index.php",
+  "config": {
+    "themeDir": "themes/switch",
+    "proxyAdd": "switch:8888"
+  },
+  "scripts": {
+    "start": "npm-run-all --parallel jsvendor watch:* server",
+    "server": "browser-sync start --proxy $npm_package_config_proxyAdd --serveStatic --files $npm_package_config_themeDir",
+    "watch:stylus": "stylus -w -u rupture -o $npm_package_config_themeDir/assets/css/main.css _assets/stylus/",
+    "prewatch:stylus": "mkdir -p $npm_package_config_themeDir/assets/css",
+    "build:stylus": "stylus -w --sourcemap-inline --disable-cache -u rupture -o $npm_package_config_themeDir/assets/css/main.css _assets/stylus/",
+    "prebuild:stylus": "mkdir -p $npm_package_config_themeDir/assets/css",
+    "watch:images": "chokidar '_assets/images/*.*' -c 'npm run images'",
+    "build:images": "rimraf assets/images/* && npm run images",
+    "images": "cp _assets/images/*.* $npm_package_config_themeDir/assets/images",
+    "preimages": "mkdir -p $npm_package_config_themeDir/assets/images",
+    "svg": "svg-sprite --symbol=true --symbol-sprite=svg.svg --symbol-dest=_assets/images _assets/svgs/*.svg",
+    "postsvg": "npm run images",
+    "watch:svg": "chokidar '_assets/svgs/*.svg' -c 'npm run svg'",
+    "build:svg": "npm run svg",
+    "watch:webpack": "npm run webpack -- -w --devtool eval-cheap-module-source-map --debug ",
+    "build:webpack": "npm run webpack -- -p",
+    "webpack": "webpack --entry ./_assets/js/main.js --output-path $npm_package_config_themeDir/assets/js --output-filename bundle.js --config webpack.config.js",
+    "jsvendor": "mkdir -p assets/js/vendor && cp _assets/js/vendor/*.js assets/js/vendor",
+    "build": "npm-run-all build:* jsvendor",
+    "prefonts": "mkdir -p $npm_package_config_themeDir/assets/css/fonts",
+    "fonts": "cp _assets/fonts/* $npm_package_config_themeDir/assets/css/fonts",
+    "watch:fonts": "chokidar '_assets/fonts/*.*' -c 'npm run fonts'",
+    "build:fonts": "npm run fonts",
+    "test": "webpack --help"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jolane/switch-cms.git"
+  },
+  "author": "Jolane Synott <jolane@jolane.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jolane/switch-cms/issues"
+  },
+  "homepage": "https://github.com/jolane/switch-cms#readme",
+  "devDependencies": {
+    "autoprefixer": "6.7.7",
+    "babel-core": "6.24.1",
+    "babel-loader": "6.4.1",
+    "babel-preset-env": "1.4.0",
+    "browser-sync": "2.18.8",
+    "chokidar-cli": "1.2.0",
+    "npm-run-all": "4.0.2",
+    "rimraf": "2.6.1",
+    "rupture": "0.6.2",
+    "stylus": "0.54.5",
+    "webpack": "2.4.1"
+  },
+  "dependencies": {
+    "google-maps": "3.2.1",
+    "svg4everybody": "2.1.7"
+  }
+}

@@ -1,0 +1,28 @@
+.SocialBar
+	display flex
+	flex-direction row
+	padding 0
+	position relative
+	padding-top 1em
+	color blue
+	&:after
+		content ''
+		display block
+		height 1px
+		width 50%
+		background-color currentColor
+		top 0
+		left 0
+		position absolute
+
+	&-item
+		list-style-type none
+		margin 0
+		padding 0
+		& + &
+			margin-left 0.75em
+	&-icon
+		display block
+		position relative
+		height 1em
+		width 1em

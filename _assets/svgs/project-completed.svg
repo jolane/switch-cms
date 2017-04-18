@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="353.04" height="455.32" viewBox="0 0 353.04 455.32">
+  <defs>
+    <clipPath id="f7202d29-3626-4342-a390-200f8f67a9bc" transform="translate(-79.88 -31.88)">
+      <rect width="512" height="512" style="fill: none"/>
+    </clipPath>
+  </defs>
+  <title>project-completed</title>
+  <g id="5d27d244-ac25-4a57-b29a-7e9968a3493b" data-name="Layer 2">
+    <g id="79bcab72-9525-489f-bd12-3c0c6b63ea95" data-name="Layer 1">
+      <g style="clip-path: url(#f7202d29-3626-4342-a390-200f8f67a9bc)">
+        <path d="M110.4,123.2l32-6.4a29.21,29.21,0,0,0,22.4-22.4l6.4-32c4-20,26.4-28.8,43.2-17.6l26.4,17.6a27.75,27.75,0,0,0,31.2,0l26.4-17.6a28.18,28.18,0,0,1,43.2,17.6l6.4,32a29.21,29.21,0,0,0,22.4,22.4l32,6.4c20,4,28.8,26.4,17.6,43.2l-17.6,26.4a27.75,27.75,0,0,0,0,31.2L420,250.4a28.18,28.18,0,0,1-17.6,43.2l-32,6.4A29.21,29.21,0,0,0,348,322.4l-6.4,32c-4,20-26.4,28.8-43.2,17.6L272,354.4a27.75,27.75,0,0,0-31.2,0L214.4,372a28.18,28.18,0,0,1-43.2-17.6l-6.4-32A29.21,29.21,0,0,0,142.4,300l-32-6.4c-20-4-28.8-26.4-17.6-43.2L110.4,224a27.75,27.75,0,0,0,0-31.2L92.8,166.4A28.18,28.18,0,0,1,110.4,123.2Z" transform="translate(-79.88 -31.88)" style="fill: none;stroke: #2c3e50;stroke-linecap: round;stroke-linejoin: round;stroke-width: 16px"/>
+      </g>
+      <g style="clip-path: url(#f7202d29-3626-4342-a390-200f8f67a9bc)">
+        <polyline points="100.12 364.92 100.12 447.32 176.12 390.52 254.52 447.32 254.52 364.92" style="fill: none;stroke: #2c3e50;stroke-linecap: round;stroke-linejoin: round;stroke-width: 16px"/>
+      </g>
+      <g style="clip-path: url(#f7202d29-3626-4342-a390-200f8f67a9bc)">
+        <line x1="177.72" y1="344.92" x2="177.72" y2="364.92" style="fill: none;stroke: #2c3e50;stroke-linecap: round;stroke-linejoin: round;stroke-width: 16px"/>
+      </g>
+      <g style="clip-path: url(#f7202d29-3626-4342-a390-200f8f67a9bc)">
+        <polyline points="108.92 167.32 170.52 230.52 270.52 128.12" style="fill: none;stroke: #2c3e50;stroke-linecap: round;stroke-linejoin: round;stroke-width: 16px"/>
+      </g>
+    </g>
+  </g>
+</svg>

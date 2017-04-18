@@ -1,0 +1,87 @@
+form_width = 240px
+.Footer
+	width 100%
+	background-color #174a7c
+	color white
+	font-size .875rem
+	font-weight Light
+	line-height 1.6
+	padding-top 3rem
+	color white
+	&-row
+		@extend .Container
+		display flex
+		flex-direction row
+		justify-content space-between
+		align-items flex-start
+		padding 1rem 0
+
+	&-col
+		flex-grow 1
+		&:first-child
+			flex-grow 2
+			& > *:first-child
+				width 50%
+				display block
+				padding-bottom 1em
+
+		&:last-child
+			flex-grow 2
+
+	&-heading
+		font-size 1.125rem
+		font-weight Light
+		margin 0 0 2em 0
+		color white
+
+	&-address
+		font-style normal
+
+	a
+		text-decoration none
+		&:hover
+			text-decoration underline
+
+
+	&-nav
+		padding 0
+
+	&-navItem
+		list-style-type none
+		margin 0 0 1em 0
+		padding 0 2.5em 0 0
+
+
+	&-lower
+		color white
+		margin-top 1rem
+		background-color dark_blue
+
+	&-form
+		height 2.875em
+		width form_width
+		position relative
+		input
+			display block
+			background-color #143f69
+			border none
+			width form_width
+			padding 0 1em
+			height 2.875em
+			line-height 2.875em
+			box-sizing border-box
+		button
+			height 2.875em
+			width 2.875em
+			position relative
+			background-color #0397d6
+			position absolute
+			top 0
+			right 0
+			border none
+			padding 1.1em
+			box-sizing border-box
+			span
+				position relative
+				display block
+				height 100%
