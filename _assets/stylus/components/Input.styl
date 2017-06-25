@@ -20,13 +20,13 @@ bg-color = #f6f6f6
 		margin 0
 		font-size 1em
 		background-color transparent
-		opacity 0.75
-		transition all 0.2s
+		opacity .75
+		transition all .2s
 		~/.is-populated &
 		*:focus + &
-			top -0.7em
-			line-height 0.6em
-			font-size 0.6em
+			top -.7em
+			line-height .6em
+			font-size .6em
 			left (left-padding * 1.6)
 
 	&-field
@@ -42,5 +42,8 @@ bg-color = #f6f6f6
 		line-height input-height
 		background-color transparent
 		font-size 1em
-		border 0
+		border none
 		appearance none
+
+	&--textarea
+		height 6em

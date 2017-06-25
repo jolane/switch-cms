@@ -9,6 +9,10 @@ class ProductPage extends Page {
 		'Description' => 'Text'
 	);
 
+	private static $has_many = array(
+		'Products' => 'Product'
+	);
+
 	public function getCMSFields() {
 
 		$fields = parent::getCMSFields();
@@ -17,7 +21,14 @@ class ProductPage extends Page {
 			array(
 				TextareaField::create('ShortDescription'),
 				TextareaField::create('Description'),
-				TextareaField::create('Icon', 'SVG Icon Code')
+				TextareaField::create('Icon', 'SVG Icon Code'),
+				GridField::create(
+					'Products',
+					'Products',
+					$this->Products(),
+					GridFieldConfig_RecordEditor::create()
+					->addComponent(new GridFieldSortableRows('SortOrder'))
+				)
 			)
 		, 'Content');
 

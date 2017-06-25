@@ -5,7 +5,9 @@ class HomePage extends Page {
 	private static $db = array(
 		'LandingSuper' => 'Varchar',
 		'LandingText' => 'Varchar',
-		'LandingButton' => 'Varchar'
+		'LandingButton' => 'Varchar',
+		'ProductsHeading' => 'Varchar',
+		'ProductsDescription' => 'Varchar(255)'
 	);
 
 	private static $has_one = array(
@@ -23,15 +25,25 @@ class HomePage extends Page {
 		$fields = parent::getCMSFields();
 
 		$fields->addFieldsToTab('Root.Main',
-			ToggleCompositeField::create('Landing',
-				'Landing',
-				array(
-					TextField::create('LandingSuper'),
-					TextareaField::create('LandingText', 'Landing Text (For **bold text**)'),
-					TextField::create('LandingButton', 'Landing Button Text'),
-					TreeDropdownField::create("LinkedPageID", "Landing Button Link", "SiteTree")
+			array(
+				ToggleCompositeField::create('Landing',
+					'Landing',
+					array(
+						TextField::create('LandingSuper'),
+						TextareaField::create('LandingText', 'Landing Text (For **bold text**)'),
+						TextField::create('LandingButton', 'Landing Button Text'),
+						TreeDropdownField::create("LinkedPageID", "Landing Button Link", "SiteTree")
+					),
+					true
 				),
-				true
+				ToggleCompositeField::create('Prodcuts',
+					'Products',
+					array(
+						TextField::create('ProductsHeading'),
+						TextField::create('ProductsDescription')
+					),
+					false
+				)
 			)
 		, 'Content');
 
@@ -45,5 +57,11 @@ class HomePage extends Page {
 
 
 class HomePage_Controller extends Page_Controller {
+	public function Stats() {
+		return Stat::get();
+	}
 
+	public function Testimonials() {
+		return Testimonial::get();
+	}
 }

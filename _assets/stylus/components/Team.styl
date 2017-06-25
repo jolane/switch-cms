@@ -1,0 +1,59 @@
+.Team
+	width 100%
+	position relative
+	padding 4em 0
+	&-heading
+		font-size 2em
+		font-weight Light
+		color black
+		text-align center
+
+	&-slider
+		position relative
+		width 100%
+		padding 0
+		margin 3em 0 0 0
+
+
+	&-slide
+		position relative
+		width 33.333%
+		list-style-type none
+		margin 0
+		padding 0
+
+	&-infoPanel
+		width 80%
+		box-sizing border-box
+		background-color rgba(255, 255, 255, .8)
+		color black
+		text-align center
+		bottom 20px
+		left 10%
+		box-shadow 0 0 8px rgba(0 , 0, 0, .3)
+		position absolute
+		font-size 14px
+		padding 10% 5%
+		opacity 0
+		transition all .3s
+		*:hover > &
+			opacity 1
+
+
+	&-name
+		font-size 12px
+		font-size Light
+	&-position
+		font-weight Book
+		text-transform uppercase
+
+	&-social
+		position relative
+		display flex
+		justify-content center
+
+	&-socialIcon
+		height 1em
+		width 1em
+		position relative
+		margin 0 0.5em

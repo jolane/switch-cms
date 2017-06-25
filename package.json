@@ -58,6 +58,7 @@
     "webpack": "2.4.1"
   },
   "dependencies": {
+    "flickity": "2.0.5",
     "google-maps": "3.2.1",
     "normalize-styl": "4.1.1",
     "svg4everybody": "2.1.7"

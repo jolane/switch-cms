@@ -11,3 +11,6 @@ SSViewer:
   theme: 'switch'
 Debug:
   friendly_error_httpcode: true
+SiteConfig:
+  extensions:
+    - SiteConfigExtension

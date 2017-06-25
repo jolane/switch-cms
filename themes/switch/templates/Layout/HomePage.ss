@@ -119,198 +119,74 @@
 <section class="OurProducts">
 	<div class="OurProducts-container">
 		<h4 class="OurProducts-heading">
-			Our Products
+			$ProductsHeading
 		</h4>
 		<h5 class="OurProducts-subHeading">
-			We deliver on our commitments to each other
+			$ProductsDescription
 		</h5>
 		<ul>
-
+		<% loop $ProductPages %>
 			<li class="OurProducts-product">
 				<div class="OurProducts-icon">
 					<svg class="icon">
-						<use xlink:href="$ThemeDir/assets/images/svg.svg#icon-voice"></use>
+						<use xlink:href="$ThemeDir/assets/images/svg.svg#$Icon"></use>
 					</svg>
-
 				</div>
 
-				<h4 class="OurProducts-title">Voice</h4>
+				<h4 class="OurProducts-title">$Title</h4>
 				<p class="OurProducts-desc">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
+					$ShortDescription
 				</p>
-
-
-
-<a href="" class="Button Button--" title="">
-	<span class="Button-inner">
-		<span class="Button-text">Read More</span>
-
-	</span>
-</a>
-
-
+				<a href="$Link" class="Button" title="$Title">
+					<span class="Button-inner">
+						<span class="Button-text">Read More</span>
+					</span>
+				</a>
 			</li>
-
-			<li class="OurProducts-product">
-				<div class="OurProducts-icon">
-					<svg class="icon">
-						<use xlink:href="$ThemeDir/assets/images/svg.svg#icon-mobile"></use>
-					</svg>
-
-				</div>
-
-				<h4 class="OurProducts-title">Mobile</h4>
-				<p class="OurProducts-desc">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
-				</p>
-
-
-
-<a href="" class="Button Button--" title="">
-	<span class="Button-inner">
-		<span class="Button-text">Read More</span>
-
-	</span>
-</a>
-
-
-			</li>
-
-			<li class="OurProducts-product">
-				<div class="OurProducts-icon">
-					<svg class="icon">
-						<use xlink:href="$ThemeDir/assets/images/svg.svg#icon-internet"></use>
-					</svg>
-
-				</div>
-
-				<h4 class="OurProducts-title">Internet</h4>
-				<p class="OurProducts-desc">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
-				</p>
-
-
-
-<a href="" class="Button Button--" title="">
-	<span class="Button-inner">
-		<span class="Button-text">Read More</span>
-
-	</span>
-</a>
-
-
-			</li>
-
-			<li class="OurProducts-product">
-				<div class="OurProducts-icon">
-					<svg class="icon">
-						<use xlink:href="$ThemeDir/assets/images/svg.svg#icon-cloud"></use>
-					</svg>
-
-				</div>
-
-				<h4 class="OurProducts-title">Cloud</h4>
-				<p class="OurProducts-desc">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
-				</p>
-
-
-
-<a href="" class="Button Button--" title="">
-	<span class="Button-inner">
-		<span class="Button-text">Read More</span>
-
-	</span>
-</a>
-
-
-			</li>
-
+		<% end_loop %>
 		</ul>
 	</div>
 </section>
 
 <section class="Testimonials">
+<% loop $Testimonials %>
 	<div class="Testimonials-container">
 		<h3 class="Testimonials-heading">
 			Testimonials
 		</h3>
 		<div class="Testimonials-item">
 			<h5 class="Testimonials-title">
-				We deliver on our commitments to each other
+				$Title
 			</h5>
 			<div class="Testimonials-text">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus 
+				$Text
 			</div>
 			<p class="Testimonials-author">
-				Jolane Synott - <span>Company</span>
+				$Name - <span>$Company</span>
 			</p>
-
-
 		</div>
 	</div>
+<% end_loop %>
 </section>
 
 
 <section class="Stats">
 	<div class="Stats-list">
-
+	<% loop $Stats %>
 		<div class="Stats-item">
 			<div class="Stats-icon">
 				<svg class="icon">
-					<use xlink:href="$ThemeDir/assets/images/svg.svg#stat-icon-complete"></use>
+					<use xlink:href="$ThemeDir/assets/images/svg.svg#$Icon"></use>
 				</svg>
 			</div>
 			<div class="Stats-number">
-				354
+				$Number
 			</div>
 			<div class="Stats-text">
-				Projects <span>Completed</span>
+				$DescriptionCoverted
 			</div>
 		</div>
-
-		<div class="Stats-item">
-			<div class="Stats-icon">
-				<svg class="icon">
-					<use xlink:href="$ThemeDir/assets/images/svg.svg#stat-icon-clients"></use>
-				</svg>
-			</div>
-			<div class="Stats-number">
-				712
-			</div>
-			<div class="Stats-text">
-				Happy <span>Clients</span>
-			</div>
-		</div>
-
-		<div class="Stats-item">
-			<div class="Stats-icon">
-				<svg class="icon">
-					<use xlink:href="$ThemeDir/assets/images/svg.svg#stat-icon-sessions"></use>
-				</svg>
-			</div>
-			<div class="Stats-number">
-				2134
-			</div>
-			<div class="Stats-text">
-				Brainstorm <span>Sessions</span>
-			</div>
-		</div>
-
-		<div class="Stats-item">
-			<div class="Stats-icon">
-				<svg class="icon">
-					<use xlink:href="$ThemeDir/assets/images/svg.svg#stat-icon-coffee"></use>
-				</svg>
-			</div>
-			<div class="Stats-number">
-				3
-			</div>
-			<div class="Stats-text">
-				Cups a <span>Day</span>
-			</div>
-		</div>
-
+	<% end_loop %>
 	</div>
 </section>
 
@@ -362,8 +238,8 @@
 				Phone
 			</div>
 			<div class="Contact-text">
-				Phone: 1800 800 723<br>
-				Fax: 1800 800 726
+				Phone: $SiteConfig.PhoneNumber<br>
+				Fax: $SiteConfig.FaxNumber
 			</div>
 		</div>
 		<div class="Contact-item">
@@ -376,8 +252,8 @@
 				Office
 			</div>
 			<div class="Contact-text">
-				Level 1, 100 Overton Road, Williams Landing Vic 3027 <br>
-				Postal: GPO Box 4222, Melbourne Vic 3000
+				$SiteConfig.PhysicalStreet, $SiteConfig.PhysicalSuburb $SiteConfig.PhysicalSate $SiteConfig.PhysicalPostcode <br>
+				$SiteConfig.PostalStreet, $SiteConfig.PostalSuburb $SiteConfig.PostalSate $SiteConfig.PostalPostcode
 			</div>
 		</div>
 		<div class="Contact-item">
@@ -390,7 +266,7 @@
 				Email
 			</div>
 			<div class="Contact-text">
-				<a href="mailto:customerservice@switchtelecom.com.au" title="customerservice@switchtelecom.com.au">customerservice@switchtelecom.com.au</a>
+				<a href="mailto:$SiteConfig.Email" title="$SiteConfig.Email">$SiteConfig.Email</a>
 			</div>
 		</div>
 	</div>
