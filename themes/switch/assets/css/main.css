@@ -803,6 +803,33 @@ http://flickity.metafizzy.co
 .Button--medium {
   font-size: 1.05em;
 }
+.CaseStudyList {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+}
+.CaseStudyList-item {
+  margin: 0 0 4rem;
+  padding: 0 0 4rem;
+  border-bottom: 1px solid #009bde;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.CaseStudyList-item.even {
+  flex-direction: reverse;
+}
+.CaseStudyList-col {
+  width: 48%;
+}
+.CaseStudyList-col img {
+  display: block;
+  width: 100%;
+}
+.CaseStudyList-desc {
+  margin-bottom: 2em;
+}
 .Checkbox {
   position: relative;
 }
@@ -1498,6 +1525,30 @@ body.menu-open .Hamburger-line:last-child {
   position: relative;
   margin: 0 0.5em;
 }
+.Video {
+  width: 100%;
+  position: relative;
+  margin: 3em 0;
+}
+.Video-inner {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+}
+.Video-inner:after {
+  content: '';
+  display: block;
+  padding-bottom: 56.25%;
+}
+.Video-embed {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
 .WhySwitch {
   width: 100%;
   background-image: url("../images/why-bg.jpg");
@@ -1847,6 +1898,27 @@ body.menu-open .Hamburger-line:last-child {
   background-position: left center, right center;
   background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
+}
+.Testimonials .flickity-prev-next-button {
+  position: absolute;
+  bottom: -50px;
+  top: auto;
+  left: 50%;
+  border-radius: 0;
+  background-color: #009bde;
+  color: #fff;
+}
+.Testimonials .flickity-prev-next-button.previous {
+  margin-left: -600px;
+}
+.Testimonials .flickity-prev-next-button.next {
+  margin-left: -550px;
+}
+.Testimonials .flickity-prev-next-button .arrow {
+  fill: #fff;
+}
+.Testimonials-slide {
+  width: 100%;
 }
 .Testimonials-heading {
   color: #000;

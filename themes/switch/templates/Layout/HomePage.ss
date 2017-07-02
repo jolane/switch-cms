@@ -31,6 +31,10 @@
 	</div>
 </section>
 
+<section class="General">
+	$Content
+</section>
+
 
 
 <div class="WhySwitch">
@@ -149,24 +153,30 @@
 </section>
 
 <section class="Testimonials">
-<% loop $Testimonials %>
 	<div class="Testimonials-container">
 		<h3 class="Testimonials-heading">
 			Testimonials
 		</h3>
-		<div class="Testimonials-item">
-			<h5 class="Testimonials-title">
-				$Title
-			</h5>
-			<div class="Testimonials-text">
-				$Text
-			</div>
-			<p class="Testimonials-author">
-				$Name - <span>$Company</span>
-			</p>
-		</div>
 	</div>
+	<div class="Testimonials-slider">
+<% loop $Testimonials %>
+		<div class="Testimonials-slide">
+			<div class="Testimonials-container">
+				<div class="Testimonials-item">
+					<h5 class="Testimonials-title">
+						$Title
+					</h5>
+					<div class="Testimonials-text">
+						$Text
+					</div>
+					<p class="Testimonials-author">
+						$Name - <span>$Company</span>
+					</p>
+				</div>
+			</div>
+		</div>
 <% end_loop %>
+	</div>
 </section>
 
 
@@ -204,116 +214,12 @@
 				</p>
 			</div>
 			<div class="Ready-col">
-
-
-
-<a href="/" class="Button Button--dark" title="Switch Now">
-	<span class="Button-inner">
-		<span class="Button-text">Switch Now</span>
-
-	</span>
-</a>
-
+				<a href="/" class="Button Button--dark" title="Switch Now">
+					<span class="Button-inner">
+						<span class="Button-text">Switch Now</span>
+					</span>
+				</a>
 			</div>
 		</div>
-	</div>
-</section>
-
-<section class="Contact">
-	<h3 class="Contact-heading">
-		Contact Us
-	</h3>
-	<p class="Contact-tagline">
-		We have a win-win attitude
-	</p>
-
-	<div class="Contact-list">
-		<div class="Contact-item">
-			<div class="Contact-icon">
-				<svg class="icon ">
-					<use xlink:href="$ThemeDir/assets/images/svg.svg#contact-icon-phone"></use>
-				</svg>
-			</div>
-			<div class="Contact-title">
-				Phone
-			</div>
-			<div class="Contact-text">
-				Phone: $SiteConfig.PhoneNumber<br>
-				Fax: $SiteConfig.FaxNumber
-			</div>
-		</div>
-		<div class="Contact-item">
-			<div class="Contact-icon">
-				<svg class="icon ">
-					<use xlink:href="$ThemeDir/assets/images/svg.svg#contact-icon-location"></use>
-				</svg>
-			</div>
-			<div class="Contact-title">
-				Office
-			</div>
-			<div class="Contact-text">
-				$SiteConfig.PhysicalStreet, $SiteConfig.PhysicalSuburb $SiteConfig.PhysicalSate $SiteConfig.PhysicalPostcode <br>
-				$SiteConfig.PostalStreet, $SiteConfig.PostalSuburb $SiteConfig.PostalSate $SiteConfig.PostalPostcode
-			</div>
-		</div>
-		<div class="Contact-item">
-			<div class="Contact-icon">
-				<svg class="icon ">
-					<use xlink:href="$ThemeDir/assets/images/svg.svg#contact-icon-email"></use>
-				</svg>
-			</div>
-			<div class="Contact-title">
-				Email
-			</div>
-			<div class="Contact-text">
-				<a href="mailto:$SiteConfig.Email" title="$SiteConfig.Email">$SiteConfig.Email</a>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="ContactForm">
-	<form class="ContactForm-form">
-
-		<div class="ContactForm-input">
-			<div class="Input">
-	<input type="" name="" class="Input-field"   />
-	<label for="" class="Input-label"></label>
-</div>
-
-		</div>
-
-		<div class="ContactForm-input">
-			<div class="Input">
-	<input type="" name="" class="Input-field"   />
-	<label for="" class="Input-label"></label>
-</div>
-
-		</div>
-
-		<div class="ContactForm-input">
-			<div class="Input">
-	<input type="" name="" class="Input-field"   />
-	<label for="" class="Input-label"></label>
-</div>
-
-		</div>
-
-		<div class="ContactForm-input ContactForm-input--full">
-			<div class="Input Input--textarea">
-				<label for="message" class="Input-label">Message</label>
-				<textarea name="message" id="message" class="ContactForm-textarea"></textarea>
-			</div>
-		</div>
-
-		<div class="ContactForm-submit">
-			<button class="ContactForm-button">Send Your Message</button>
-		</div>
-	</form>
-</section>
-
-<section class="Map">
-	<div class="Map-container">
-		<div class="Map-map" id="map"></div>
 	</div>
 </section>

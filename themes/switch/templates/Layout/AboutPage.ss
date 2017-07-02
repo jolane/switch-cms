@@ -105,7 +105,7 @@
 				<h5 class="Team-name">
 					$Name
 				</h5>
-				<h6 class="Team-position">
+				<%-- <h6 class="Team-position">
 					$Position
 				</h6>
 				<p class="Team-bio">
@@ -130,7 +130,7 @@
 						</svg>
 
 					</a>
-				</div>
+				</div> --%>
 			</div>
 		</li>
 		<% end_loop %>

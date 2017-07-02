@@ -6,3 +6,4 @@ require('./modules/Scroll');
 require('./modules/Map');
 require('./modules/Purpose');
 require('./modules/Team');
+require('./modules/Testimonials');

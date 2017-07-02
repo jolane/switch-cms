@@ -47,8 +47,6 @@ class HomePage extends Page {
 			)
 		, 'Content');
 
-		$fields->removeFieldFromTab("Root.Main","Content");
-
 		return $fields;
 	}
 

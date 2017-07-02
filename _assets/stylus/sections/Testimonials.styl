@@ -5,6 +5,28 @@
 	background-position left center, right center
 	background-size contain, contain
 	background-repeat no-repeat, no-repeat
+
+	.flickity-prev-next-button
+		position absolute
+		bottom -50px
+		top auto
+		left 50%
+		border-radius 0
+		background-color blue
+		color white
+		&.previous
+			margin-left -600px
+
+		&.next
+			margin-left -550px
+
+		.arrow
+			fill white
+
+
+	&-slide
+		width 100%
+
 	&-container
 		@extend .Container
 
