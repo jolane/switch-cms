@@ -27,8 +27,6 @@
 		<p>
 			<% if $Desc %>
 				$Desc
-			<% else %>
-				$Parent.Desc
 			<% end_if %>
 		</p>
 	</div>
