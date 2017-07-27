@@ -6,7 +6,8 @@ class ProductHolder extends Page {
 
 	private static $db = array(
 		'LandingText' => 'Varchar',
-		'Intro' => 'Varchar(255)'
+		'Intro' => 'Varchar(255)',
+		'Desc' => 'Text'
 	);
 
 	public function LandingTextCoverted() {
@@ -24,7 +25,8 @@ class ProductHolder extends Page {
 			'Root.Main',
 			array(
 				TextareaField::create('LandingText', 'Landing Text (For **bold text**)'),
-				TextField::create('Intro')
+				TextField::create('Intro'),
+				TextareaField::create('Desc')
 			),
 			'Content'
 
