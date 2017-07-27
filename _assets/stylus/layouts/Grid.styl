@@ -1,0 +1,18 @@
+.Grid
+	width 100%
+	padding 3vw 0
+	&--reverse
+		background-color light_gray
+
+	&-row
+		width 90%
+		max-width 1200px
+		position relative
+		margin 0 auto
+		display flex
+		justify-content space-between
+		~/--reverse &
+			flex-direction row-reverse
+
+	&-col
+		children(2, 5%)

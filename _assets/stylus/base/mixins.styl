@@ -29,3 +29,9 @@
 	font-weight Medium
 	color dark_blue
 	text-transform uppercase
+
+
+children($n = 2, $margin = 3vw)
+	&:first-child:nth-last-child({$n})
+	&:first-child:nth-last-child({$n}) ~ &
+		width 'calc(%s - %s)' % ((100 / $n)\% ($margin/2))

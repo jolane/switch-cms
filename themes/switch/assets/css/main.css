@@ -539,6 +539,28 @@ img {
   display: block;
   height: 100%;
 }
+.Grid {
+  width: 100%;
+  padding: 3vw 0;
+}
+.Grid--reverse {
+  background-color: #f9f9f9;
+}
+.Grid-row {
+  width: 90%;
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.Grid--reverse .Grid-row {
+  flex-direction: row-reverse;
+}
+.Grid-col:first-child:nth-last-child(2),
+.Grid-col:first-child:nth-last-child(2) ~ .Grid-col {
+  width: calc(50% - 2.5%);
+}
 .Header {
   position: absolute;
   top: 0;
@@ -629,11 +651,21 @@ body.show-header .Header {
   font-weight: 300;
   margin: 0 0 1em 0;
 }
-.OffWhite h6 {
+.OffWhite ul,
+.OffWhite p {
   font-size: 1.875em;
   text-align: center;
   font-weight: 300;
   margin: 0 0 1em 0;
+  max-width: 90vw;
+  position: relative;
+  margin: 0 auto;
+}
+.OffWhite ul li,
+.OffWhite p li {
+  width: auto;
+  list-style-type: none;
+  margin-bottom: 1em;
 }
 /* Flickity v2.0.3
 http://flickity.metafizzy.co
@@ -818,7 +850,7 @@ http://flickity.metafizzy.co
   justify-content: space-between;
 }
 .CaseStudyList-item.even {
-  flex-direction: reverse;
+  flex-direction: row-reverse;
 }
 .CaseStudyList-col {
   width: 48%;
@@ -1524,6 +1556,23 @@ body.menu-open .Hamburger-line:last-child {
   width: 1em;
   position: relative;
   margin: 0 0.5em;
+}
+.TextBlock {
+  width: 100%;
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.TextBlock-heading {
+  font-size: 24px;
+  color: #1f355e;
+  margin: 0 0 1em;
+}
+.TextBlock-link {
+  color: #009bde;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
 }
 .Video {
   width: 100%;
