@@ -35,8 +35,6 @@
 	$Content
 </section>
 
-<% include Approach %>
-
 <%--
 <div class="WhySwitch">
 	<div class="WhySwitch-content">
