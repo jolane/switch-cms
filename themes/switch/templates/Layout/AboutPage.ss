@@ -130,7 +130,7 @@
 		<% end_loop %>
 	</ul>
 </section>
-
+<%--
 <section class="Grid">
 	<div class="Grid-row">
 		<div class="Grid-col">
@@ -174,10 +174,4 @@
 			<img src="http://via.placeholder.com/800x500" alt="">
 		</div>
 	</div>
-</section>
-
-<section class="General">
-	<h2>
-		hero
-	</h2>
-</section>
+</section> --%>
