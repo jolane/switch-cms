@@ -31,21 +31,10 @@
 <section class="OffWhite">
 	<h4>Team of 3</h4>
 	<img src="$ThemeDir/assets/images/teams.png" alt="">
-	<br>
-	<br>
-	<br>
-	<p>
-		At Switch, we support each of our customers with a dedicated team of 3 from the initial engagement, through to the end of migration and ongoing support for the life of the customer. The team is made up of Business Account Manager, Project Manager and Technical Specialist.
-	</p>
-	<br>
-	<br>
-	<h4>
-		Empowering our people
-	</h4>
+</section>
 
-	<p>
-		Working in small, collaborative teams enables us to deliver superior customer service because each team member understands the customer and all that is required for successful outcomes.
-	</p>
+<section class="General">
+	$Content
 </section>
 
 <section class="Purpose">
