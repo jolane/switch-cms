@@ -1,7 +1,13 @@
 <% include ProductsHeader %>
 <section class="Products">
+	<section class="General">
+		<h2>
+			$ShortDescription
+		</h2>
+		$Content
+	</section>
 	<article class="Product">
-	<% loop $Products %>
+	<%-- <% loop $Products %>
 		<div class="Product-block">
 			<div class="Product-blockText">
 				<h4 class="Product-title">$Name</h4>
@@ -15,6 +21,6 @@
 				</div>
 			</div>
 		</div>
-	<% end_loop %>
+	<% end_loop %> --%>
 	</article>
 </section>
