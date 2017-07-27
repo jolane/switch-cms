@@ -24,6 +24,13 @@
 				$Parent.Intro
 			<% end_if %>
 		</h3>
+		<p>
+			<% if $Desc %>
+				$Desc
+			<% else %>
+				$Parent.Desc
+			<% end_if %>
+		</p>
 	</div>
 	<ul class="ProductIntro-tabs">
 		<% loop $ProductPages %>
