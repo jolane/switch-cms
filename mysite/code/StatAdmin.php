@@ -6,6 +6,7 @@ class StatAdmin extends ModelAdmin {
 	private static $url_segment = 'stats';
 	private static $managed_models = array('Stat');
 	private static $menu_priority = 9;
+	private static $menu_icon = 'mysite/icons/hashtag.png';
 
 	public function getEditForm($id = null, $fields = null) {
 		$form=parent::getEditForm($id, $fields);
