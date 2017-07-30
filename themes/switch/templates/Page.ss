@@ -111,9 +111,8 @@
 		</div>
 		<div class="Footer-col">
 			<h5 class="Footer-heading">Services</h5>
-
-				<li class="Footer-navItem">
-				<a class="IconText">
+					<li class="Footer-navItem">
+						<a class="IconText">
 	<svg class="IconText-icon ">
 		<use xlink:href="$ThemeDir/assets/images/svg.svg#startup-mono"></use>
 	</svg>
@@ -121,6 +120,7 @@
 		Startup
 	</span>
 </a>
+
 
 				</li>
 
