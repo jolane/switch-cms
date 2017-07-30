@@ -1,6 +1,6 @@
 <?php
 
-class ServiceAdmin extends ModelAdmin {
+class StatAdmin extends ModelAdmin {
 
 	private static $menu_title = 'Stats';
 	private static $url_segment = 'stats';
