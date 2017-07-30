@@ -12,6 +12,11 @@ class Service extends DataObject {
 
 	private static $default_sort = 'SortOrder';
 
+	private static $summary_fields = array(
+		'Name' => 'Name',
+		'ShortDesc' => 'ShortDesc'
+	);
+
 
 	public function getCMSFields() {
 
