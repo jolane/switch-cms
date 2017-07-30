@@ -543,7 +543,7 @@ img {
   width: 100%;
   padding: 3vw 0;
 }
-.Grid--reverse {
+.Grid--even {
   background-color: #f9f9f9;
 }
 .Grid-row {
@@ -554,7 +554,7 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.Grid--reverse .Grid-row {
+.Grid--even .Grid-row {
   flex-direction: row-reverse;
 }
 .Grid-col:first-child:nth-last-child(2),
@@ -1047,6 +1047,13 @@ body.menu-open .Hamburger-line:last-child {
 }
 .Hero--fullscreen {
   height: 100vh;
+}
+.Hero-desc {
+  font-weight: 200;
+  color: #fff;
+  width: 40%;
+  margin-bottom: 2em;
+  font-size: 1.5em;
 }
 .IconText {
   display: block;
@@ -1609,14 +1616,14 @@ body.menu-open .Hamburger-line:last-child {
 }
 .WhySwitch-content {
   width: 100%;
-  padding: 0 8% 0 37%;
+  padding: 0 8% 4rem 37%;
 }
 .WhySwitch-heading {
   font-weight: 300;
   color: #000;
   font-size: 3.75em;
   line-height: 1;
-  margin: 0 0 0.2em 0;
+  margin: 0 0 0.2em;
 }
 .WhySwitch-subHeading {
   font-weight: 300;
@@ -1633,7 +1640,7 @@ body.menu-open .Hamburger-line:last-child {
   position: relative;
   padding: 0 0 0 6.5vw;
   list-style-type: none;
-  margin: 0 0 1em 0;
+  margin: 0 0 3em 0;
 }
 .WhySwitch-icon {
   height: 5vw;

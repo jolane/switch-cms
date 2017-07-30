@@ -62,4 +62,8 @@ class HomePage_Controller extends Page_Controller {
 	public function Testimonials() {
 		return Testimonial::get();
 	}
+
+	public function Services() {
+		return Service::get();
+	}
 }

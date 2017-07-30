@@ -12,6 +12,9 @@
 		<h2 class="Hero-title">
 			$LandingTextCoverted
 		</h2>
+		<h5 class="Hero-desc">
+			Switch Telecom's new approach towards managed services has set them apart as a leader in the complex world of telecommunications
+		</h5>
 
 <a href="$LinkedPage.Link" class="Button Button--" title="Switch Now">
 	<span class="Button-inner">
@@ -31,11 +34,11 @@
 	</div>
 </section>
 
-<section class="General">
+<%-- <section class="General">
 	$Content
-</section>
+</section> --%>
 
-<%--
+
 <div class="WhySwitch">
 	<div class="WhySwitch-content">
 		<h3 class="WhySwitch-heading">
@@ -45,21 +48,22 @@
 			How we do it:
 		</h4>
 		<ul class="WhySwitch-list">
-
-			<li class="WhySwitch-item">
+<% loop $Services %>
+				<li class="WhySwitch-item">
 				<div class="WhySwitch-icon">
 					<svg class="icon">
-						<use xlink:href="$ThemeDir/assets/images/svg.svg#startup"></use>
+						<use xlink:href="$ThemeDir/assets/images/svg.svg#$Icon"></use>
 					</svg>
 				</div>
 				<h5 class="WhySwitch-title">
-					Startup
+					$Name
 				</h5>
 				<p class="WhySwitch-desc">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					$TagLine
 				</p>
 			</li>
-
+<% end_loop %>
+<%--
 			<li class="WhySwitch-item">
 				<div class="WhySwitch-icon">
 					<svg class="icon">
@@ -101,7 +105,7 @@
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 				</p>
 			</li>
-
+--%>
 		</ul>
 
 
@@ -114,7 +118,7 @@
 </a>
 
 	</div>
-</div> --%>
+
 
 
 
