@@ -13,7 +13,13 @@
 <section class="AboutIntro">
 	<div class="AboutIntro-content">
 		<h2>Inside Switch</h2>
-		<h3></h3>
+		<h3>What is so different about us?</h3>
+		<p>We offer telco as it should be: we know your business, are fast, responsive and reliable.</p>
+		<p>Managed services: We manage your services so you can get on with business. </p>
+		<p>One team: We partner with you for the life of your business. </p>
+		<p>Project managed: All projects are project managed to ensure budget and time constraints are met.</p>
+		<p>We leverage technological expertise alongside responsive customer support for unbeatable value.</p>
+
 		<p>Our people are the key to your communication success. Flexible, highly trained for complex services, and dedicated to the customer, each team member must be creative and able to jump hurdles in order to keep your business communicating.</p>
 	</div>
 	<div class="AboutIntro-images">
